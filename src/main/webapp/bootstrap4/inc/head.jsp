@@ -1,1 +1,2 @@
 <link rel="stylesheet" href="<%=request.getServletContext().getContextPath()%>/assets/css/bootstrap.min.css" >
+<link rel="stylesheet" href="<%=request.getServletContext().getContextPath()%>/assets/css/custom.css" >
