@@ -9,8 +9,8 @@ display: flex;
 	width: 35%;
     margin-left: auto;
     margin-right: auto;
-    background: #0043ff54;
-}
+    background: linear-gradient(#00BCD4,#ffffff);
+    }
 
 
 .green-color{
@@ -19,10 +19,15 @@ display: flex;
 .white-color{
 	color:#ffffff;
 }
+
+.gray-progress-bg{
+	background-color: #eceeef;
+}
+
+
 .border-gray{
-    border: 1px solid gray;	
-        border-radius: 5%;
-        box-shadow: 1px 1px 1px 2px #ccc;
+    border: 1px solid #03A9F4 !important;	
+        border-radius: 2%;
 }
 
 

@@ -19,20 +19,19 @@
 			<div class="col-12">
 				<img class="img-thumbnail logo-image border-0"
 					src="http://elt.talentify.in:9999/assets/img/user_images/new_talentify_logo.png"  />
-				<form class="" action="#" method="get">
+				<form class="" id="basic_validation" action="<%=request.getServletContext().getContextPath()%>/rest/auth/login" method="post">
 					<div class="form-group p-2 m-2">
 						<label for="exampleInputEmail1">Email address</label> <input
-							type="email" class="form-control" id="exampleInputEmail1" data-validation="email"
-							aria-describedby="emailHelp" placeholder="Enter email">
+							type="email" name="email" class="form-control mb-1" id="exampleInputEmail1" 
+							aria-describedby="emailHelp" autocomplete="off" placeholder="Enter email" data-error-msg="Invalid Email">
 					</div>
 					<div class="form-group p-2 m-2 mb-4">
-						<label for="exampleInputPassword1">Password</label> <input
-							type="password" class="form-control" id="exampleInputPassword1"
-							placeholder="Password"  name="pass"
-		 data-validation="strength" data-validation-strength="2">
+						<label for="exampleInputPassword1" >Password</label> <input
+							type="password" class="form-control mb-1" id="exampleInputPassword1"
+							placeholder="Password"  name="pass" autocomplete="off"  data-min-length="4" >
 					</div>
 					
-					<div  class=" login-submit bg-trans" ><i class="fas fa-arrow-circle-right fa-3x white-color"></i></div>
+					<div  class=" login-submit bg-trans" ><i class="fas fa-arrow-circle-right fa-3x green-color"></i></div>
 					
 				</form>
 			</div>
