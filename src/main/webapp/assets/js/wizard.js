@@ -103,6 +103,8 @@ function handleNextStep(button){
 			if(validation === "true"){
 				$('.wizard_previous').prop('disabled', false);
 				goToNext($(button));
+			}else{
+				alert('fill up the mandatory field');
 			}
 		}
 	});
@@ -181,6 +183,8 @@ function handlePreviousStep(button){
 			}
 			
 		});
+	}else{
+		$(button).prop('disabled',true);
 	}
 }
 
